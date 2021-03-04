@@ -26,7 +26,7 @@
 <meta property="og:image" content="http://example.com/SKPCN-page/images/teaser.jpg">
 <meta property="og:image" content="http://example.com/SKPCN-page/images/framework.jpg">
 <meta property="article:published_time" content="2020-10-12T11:43:01.000Z">
-<meta property="article:modified_time" content="2020-10-12T14:36:35.357Z">
+<meta property="article:modified_time" content="2021-03-04T21:54:36.762Z">
 <meta property="article:author" content="SK-PCN Team">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://example.com/SKPCN-page/images/teaser.jpg">
@@ -123,7 +123,9 @@
 <hr>
 <h3 id="Method"><a href="#Method" class="headerlink" title="Method"></a>Method</h3><p><img align="left" src="/SKPCN-page/images/framework.jpg" width="100%" height="100%"> <br><br>We illustrate the architecture of SK-PCN above. Given a partial scan, we aim at completing the missing geometries while preserving fidelity on the observable region. To this end, our SK-PCN is designed with a generator for surface completion, and a patch discriminator to distinguish and refine our results with the ground-truth. The generator has two phases: skeleton extraction and skeleton-bridged completion. The skeleton extraction module groups and parallelly aggregates the multi-resolution feature from the input to predict the skeletal points. The completion module shares the similar feature extraction process. It dually obtains multi-resolution features from both the skeleton and the input, and pairs them on each resolution scale. For each pair, a Non-Local Attention module is designed to search the contributive local features from the partial scan to each skeletal point. These local features are then interpolated back to the skeletal points and aggregated to regress their displacements to the shape surface with the corresponding normal vectors on the surface. To preserve the shape information of the observable region, we merge the input to our shape followed with surface adjustment and produce the final mesh with Poisson Surface Reconstruction. See details of each submodule in the paper.</p>
 <hr>
-<h3 id="Citation"><a href="#Citation" class="headerlink" title="Citation"></a>Citation</h3><p>Coming soon.</p>
+<h3 id="Citation"><a href="#Citation" class="headerlink" title="Citation"></a>Citation</h3><p>If you are inspired by our work, please consider citing:</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">@article{nie2020skeleton,</span><br><span class="line">  title={Skeleton-bridged Point Completion: From Global Inference to Local Adjustment},</span><br><span class="line">  author={Nie, Yinyu and Lin, Yiqun and Han, Xiaoguang and Guo, Shihui and Chang, Jian and Cui, Shuguang and Zhang, Jian Jun},</span><br><span class="line">  journal={arXiv preprint arXiv:2010.07428},</span><br><span class="line">  year={2020}</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+
 <hr>
 <h3 id="Paper-Code-and-Data"><a href="#Paper-Code-and-Data" class="headerlink" title="Paper, Code and Data"></a>Paper, Code and Data</h3><p>Coming soon.</p>
 </body></html>
@@ -163,7 +165,7 @@
     <div class="container">
         <div class="columns content">
             <div class="column is-narrow has-text-centered">
-                &copy; 2020 SK-PCN Team&nbsp;
+                &copy; 2021 SK-PCN Team&nbsp;
                 Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> & <a
                         target="_blank" rel="noopener" href="http://github.com/ppoffice/hexo-theme-minos">Minos</a>
             </div>
